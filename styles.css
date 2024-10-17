@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post h2 {
+    margin-bottom: 0.75rem;
+    color: #007bff;
+}
+
+body.dark-mode .post h2 {
+    color: #66aaff;
+}
+
+.post p {
+    color: #333;
+}
+
+body.dark-mode .post p {
+    color: #ffffff;
+}
+
+.post .like-btn,
+.post .read-more-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+#comment-section {
+    margin-top: 2rem;
+}
+#comment {
+    width: 80%; /* Reduced width */
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin: 0 auto; /* Center it */
+}
+#comments-container {
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+.comment {
+    background-color: #f9f9f9;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode .comment {
+    background-color: #444;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #282c34;
+    color: #ffffff;
+    box-shadow: 0 -4px 2px -2px gray;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0.25rem;
+    }
+
+    .post h2 {
+        font-size: 1.2rem;
+    }
+
+    .post p {
+        font-size: 1rem;
+    }
+
+    .post .like-btn,
+    .post .read-more-btn {
+        padding: 0.4rem 0.8rem;
+    }
+
+    #comment {
+        padding: 0.5rem;
+    }
+
+    .comment {
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Fanatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Football Fanatics</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Search posts...">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+    <div class="container">
+        <div id="posts-container">
+            <div class="post">
+                <h2>Top 10 Football Rivalries</h2>
+                <p>Author: Ayman LAACHOUBI | Date: October 14, 2024</p>
+                <p class="summary">Football isn’t just a game; it’s a way of life for millions around the world...</p>
+                <p class="full-content" style="display: none;">
+                    Football isn’t just a game; it’s a way of life for millions around the world. The passion, history, and fierce competition often culminate in some of the sport’s most electrifying rivalries. Here’s a look at the top 10 football rivalries that capture the hearts of fans everywhere.<br><br>
+                    1. <strong>El Clásico: Barcelona vs. Real Madrid</strong><br>
+                    One of the most famous rivalries globally, El Clásico is not just about football; it’s a cultural clash. The matches between these two giants of Spanish football reflect deep historical and political tensions, drawing millions of viewers each time they face off.<br><br>
+                    2. <strong>The Old Firm: Celtic vs. Rangers</strong><br>
+                    This fierce Scottish rivalry extends beyond the pitch. Rooted in religious and socio-political divides, matches between Celtic and Rangers, both based in Glasgow, are characterized by intense passion and vibrant atmospheres, making them a must-watch for any football fan.<br><br>
+                    3. <strong>Manchester Derby: Manchester United vs. Manchester City</strong><br>
+                    The rivalry in Manchester has intensified over the years, especially with City’s recent successes. Matches are filled with high stakes and local bragging rights, attracting fans from all over the globe.<br><br>
+                    4. <strong>North West Derby: Liverpool vs. Everton</strong><br>
+                    This rivalry, known as the Merseyside Derby, showcases two teams from the same city. It’s not just about local pride; it’s a battle steeped in history, with passionate fans that make every encounter electric.<br><br>
+                    5. <strong>Derby della Madonnina: AC Milan vs. Inter Milan</strong><br>
+                    When AC Milan and Inter Milan clash, it’s more than just a football match; it’s a spectacle. Both teams share the iconic San Siro stadium, and their matches are charged with intensity, showcasing the best of Italian football.<br><br>
+                    6. <strong>Superclásico: Boca Juniors vs. River Plate</strong><br>
+                    Argentina’s most famous rivalry, the Superclásico, is known for its passionate fanbase and vibrant atmosphere. The fierce competition between Boca Juniors and River Plate captures the essence of Argentine football, often regarded as one of the fiercest rivalries in the world.<br><br>
+                    7. <strong>The Seville Derby: Sevilla vs. Real Betis</strong><br>
+                    The rivalry in Seville is characterized by a vibrant atmosphere and deep-rooted history. Matches between Sevilla and Real Betis are a showcase of local pride, drawing passionate fans who create an unforgettable experience.<br><br>
+                    8. <strong>The Manchester vs. Liverpool Rivalry</strong><br>
+                    A historical rivalry that stretches back over a century, matches between Manchester United and Liverpool are steeped in tradition and intensity. With both clubs having rich histories and numerous titles, the stakes are always high.<br><br>
+                    9. <strong>London Derby: Arsenal vs. Tottenham Hotspur</strong><br>
+                    The North London Derby is a classic showdown between two of England’s most storied clubs. The rivalry is intense, filled with history and passion, making every match a significant event for fans.<br><br>
+                    10. <strong>Classico Paulista: Santos vs. Palmeiras</strong><br>
+                    In Brazil, the Classico Paulista showcases a heated rivalry between Santos and Palmeiras. Known for its skilled players and vibrant fan culture, this matchup highlights the passion for football in Brazilian culture.
+                </p>
+                <button class="read-more-btn" onclick="toggleContent(event)">Read More</button>
+                <button class="like-btn" onclick="likePost(event)">Like</button>
+            </div>
+            <div class="post">
+                <h2>Inspiring Fan Stories</h2>
+                <p>Author: Ayman LAACHOUBI | Date: October 15, 2024</p>
+                <p class="summary">Football is more than just a sport; it’s a global phenomenon that brings people together...</p>
+                <p class="full-content" style="display: none;">
+                    Football is more than just a sport; it’s a global phenomenon that brings people together, ignites passion, and creates unforgettable memories. At the heart of this beautiful game are the fans—the lifeblood that fuels the excitement and fervor surrounding every match. In this blog, we’ll explore some inspiring fan stories that showcase the deep connection between supporters and their beloved clubs.<br><br>
+                    1. <strong>From the Stands to the Pitch: A Journey of Love</strong><br>
+                    Meet Maria, a lifelong Barcelona fan who traveled from her home in Argentina to witness her team play at Camp Nou. For Maria, attending a match was a dream come true. The moment she stepped into the stadium, the energy of the crowd engulfed her. As she watched her heroes warm up on the pitch, tears of joy streamed down her face. Maria’s story reminds us that for many fans, football isn’t just a game; it’s a lifelong passion that transcends borders.<br><br>
+                    2. <strong>Bonding Through Rivalry: A Family Divided</strong><br>
+                    The Smith family is a household divided—half are die-hard Manchester United fans, while the other half proudly supports Manchester City. Despite their rivalry, the family gathers for every Manchester Derby, turning the match into a celebration filled with laughter, banter, and friendly competition. Their story highlights how football can bring people together, even when they support opposing teams.<br><br>
+                    3. <strong>A Journey Across Continents: Supporting from Afar</strong><br>
+                    For Raj, a young football enthusiast from India, supporting Liverpool FC from halfway around the world has been a thrilling experience. He saves every penny to watch matches at odd hours and connects with fellow fans through social media. Raj’s dedication exemplifies how the love for a club can unite fans globally, creating a sense of community that transcends geography.<br><br>
+                    4. <strong>The Healing Power of Football</strong><br>
+                    After losing her father, Sarah found solace in the stands of her local football club. Attending matches became a form of therapy, helping her cope with grief. The camaraderie she felt with fellow fans and the shared passion for the game helped her heal. Sarah’s story is a testament to the power of football to provide comfort and community during difficult times.<br><br>
+                    5. <strong>A Fan’s Journey to the World Cup</strong><br>
+                    For Ahmed, attending the FIFA World Cup was a lifelong dream. He saved for years, planning every detail of his trip to Russia. The thrill of experiencing the matches live, surrounded by fans from around the world, was a bucket-list moment. Ahmed’s journey highlights the lengths fans will go to for their love of the game and the incredible experiences football can offer.
+                </p>
+                <button class="read-more-btn" onclick="toggleContent(event)">Read More</button>
+                <button class="like-btn" onclick="likePost(event)">Like</button>
+            </div>
+            <div class="post">
+                <h2>Evolution of Football Fan Culture</h2>
+                <p>Author: Ayman LAACHOUBI | Date: October 17, 2024</p>
+                <p class="summary">Football, often referred to as the beautiful game, has undergone a remarkable transformation over the decades...</p>
+                <p class="full-content" style="display: none;">
+                    Football, often referred to as the beautiful game, has undergone a remarkable transformation over the decades. Central to this evolution is the culture of its fans—passionate supporters who breathe life into the sport. This blog explores the evolution of football fan culture, tracing its journey from local gatherings to a global phenomenon that transcends borders.<br><br>
+                    1. <strong>The Early Days: Local Pride and Community Spirit</strong><br>
+                    In the early days of football, fans were predominantly local. Matches were community events, bringing together families and friends. Supporters often traveled short distances to cheer for their local clubs, creating a strong sense of identity tied to their towns or cities. The atmosphere was intimate, with fans often participating in chants and songs that reflected their community’s spirit.<br><br>
+                    2. <strong>The Rise of Organized Supporters</strong><br>
+                    As football grew in popularity, so did the organization of fan groups. In the 1960s and 70s, the emergence of official supporters’ clubs began to reshape the landscape. These groups provided structure, allowing fans to unite and express their loyalty more fervently. They organized travel to matches, created banners, and developed unique chants, solidifying their identities within the larger football community.<br><br>
+                    3. <strong>The Influence of Media: From Local to Global</strong><br>
+                    The advent of television revolutionized the way fans consumed football. Matches could be broadcast to millions, turning local clubs into global brands. Fans from different countries began to follow clubs outside their regions, leading to a more diverse fanbase. This shift was pivotal in creating a global community, with fans engaging in discussions about their teams across various platforms.<br><br>
+                    4. <strong>The Rise of Ultra Culture</strong><br>
+                    In the late 20th century, the rise of ultra groups marked a significant shift in fan culture. Originating in Italy and spreading across Europe, ultras are known for their passionate and often choreographed displays of support. These groups prioritize loyalty and create vibrant atmospheres in stadiums through intricate banners, songs, and coordinated movements. While they have been controversial at times, their influence on the modern match-day experience is undeniable.<br><br>
+                    5. <strong>Digital Revolution: The Age of Social Media</strong><br>
+                    The 21st century saw the emergence of social media, further transforming fan culture. Platforms like Twitter, Instagram, and TikTok have allowed fans to connect, share experiences, and engage with their clubs in unprecedented ways. Supporters can now follow players and clubs in real-time, share memes, and participate in discussions with fellow fans globally. This digital age has not only strengthened connections among fans but also given them a voice in club matters.<br><br>
+                    6. <strong>The Commercialization of Football</strong><br>
+                    As football became a multi-billion-dollar industry, fan culture adapted. The commercialization of the sport introduced corporate sponsorships, global merchandising, and high-profile transfers. While this has provided fans with enhanced experiences—like stadium upgrades and improved broadcasting—some argue it has led to a disconnect between clubs and their traditional fan bases. The rise of the “armchair fan,” who consumes football from the comfort of their home, has sparked debates about the authenticity of modern support.<br><br>
+                    7. <strong>Social Movements and Fan Activism</strong><br>
+                    In recent years, football fans have increasingly used their platforms for activism. Issues like racial equality, mental health awareness, and climate change have been championed by fan groups and movements. The solidarity displayed during campaigns like “Black Lives Matter” and initiatives supporting local communities reflects the growing recognition of fans’ roles in advocating for change beyond the pitch.<br><br>
+                    8. <strong>The Future of Football Fan Culture</strong><br>
+                    Looking ahead, the evolution of football fan culture will likely continue. With advancements in technology, we may see more immersive experiences through virtual reality and augmented reality, allowing fans to engage with matches in new ways. Additionally, as the sport becomes increasingly globalized, clubs will need to balance their traditional roots with the expectations of a diverse fanbase.
+                </p>
+                <button class="read-more-btn" onclick="toggleContent(event)">Read More</button>
+                <button class="like-btn" onclick="likePost(event)">Like</button>
+            </div>
+            <!-- Add more posts as needed -->
+        </div>
+        <div id="comment-section">
+            <h3>Leave a Comment</h3>
+            <textarea id="comment" rows="4" placeholder="Write your comment here..."></textarea>
+            <button onclick="submitComment()">Submit</button>
+            <div id="comments-container"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Football Fanatics. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
